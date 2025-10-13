@@ -1,0 +1,82 @@
+/* ===================== styles.css (arquivo externo ajustado) ===================== */
+/* Demonstração: comparação entre inline, block e inline-block */
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+  background: #f6f8fb;
+  color: #222;
+  padding: 2rem;
+}
+
+.site-header{
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.cards{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 700px){
+  .cards{ grid-template-columns: repeat(3, 1fr); }
+}
+
+.card{
+  background: #dff6ff; /* content */
+  padding: 1rem;       /* padding: espaço interno */
+  border: 4px solid #1e90ff; /* border: linha ao redor */
+  margin: 0.5rem;      /* margin: espaço externo */
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.card-title{
+  background: #ffffffaa;
+  border: 2px dashed #1e90ff;
+  padding: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.icon{
+  display: inline-block; /* permite definir largura/altura mas mantém na mesma linha */
+  width: 1.5em;
+  text-align: center;
+  margin-right: 0.4em;
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+
+.muted{
+  display: inline-block; /* inline-block mantém lado a lado com controle de dimensões */
+  font-weight: 600;
+  width: 200px; /* largura agora respeitada */
+  height: 40px; /* altura aplicada */
+  line-height: 40px; /* centralização vertical do texto */
+  text-align: center;
+  background: #ffe9b3;
+  border: 2px solid #d1a326;
+  border-radius: 4px;
+  margin-right: 0.3em;
+}
+
+/* Comentário: elementos inline-block mantêm o fluxo horizontal (na mesma linha)
+   mas permitem definir width/height como blocos. Diferem de inline (sem dimensões)
+   e de block (que quebra linha). */
+
+code{
+  background: #eef2f7;
+  padding: 0.08rem 0.3rem;
+  border-radius: 4px;
+}
+
+.site-footer{
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #666;
+}

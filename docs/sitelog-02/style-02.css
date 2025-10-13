@@ -1,0 +1,67 @@
+/* ===================== styles.css (arquivo externo ajustado) ===================== */
+/* Agora com destaque visual para content, padding, border e margin */
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+  background: #f6f8fb;
+  color: #222;
+  padding: 2rem;
+}
+
+.site-header{
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.cards{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 700px){
+  .cards{ grid-template-columns: repeat(3, 1fr); }
+}
+
+/* Visualização das camadas do box model */
+.card{
+  background: #dff6ff; /* content */
+  padding: 1rem;       /* padding: espaço interno */
+  border: 4px solid #1e90ff; /* border: linha ao redor */
+  margin: 0.5rem;      /* margin: espaço externo */
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.card-title{
+  background: #ffffffaa;
+  border: 2px dashed #1e90ff;
+  padding: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.icon{
+  display: inline-block;
+  width: 1.5em;
+  text-align: center;
+  margin-right: 0.4em;
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+.muted{ font-weight: 600; margin-right: 0.3em; }
+
+code{
+  background: #eef2f7;
+  padding: 0.08rem 0.3rem;
+  border-radius: 4px;
+}
+
+.site-footer{
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #666;
+}

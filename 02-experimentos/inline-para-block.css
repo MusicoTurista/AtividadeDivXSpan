@@ -1,0 +1,91 @@
+/* ===================== styles.css (arquivo externo ajustado) ===================== */
+/* Demonstração: alguns <span> agora são exibidos como blocos */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+    background: #f6f8fb;
+    color: #222;
+    padding: 2rem;
+}
+
+.site-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.cards {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 700px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.card {
+    background: #dff6ff;
+    /* content */
+    padding: 1rem;
+    /* padding: espaço interno */
+    border: 4px solid #1e90ff;
+    /* border: linha ao redor */
+    margin: 0.5rem;
+    /* margin: espaço externo */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.card-title {
+    background: #ffffffaa;
+    border: 2px dashed #1e90ff;
+    padding: 0.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.icon {
+    display: inline-block;
+    width: 1.5em;
+    text-align: center;
+    margin-right: 0.4em;
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+.muted {
+    font-weight: 600;
+    margin-right: 0.3em;
+}
+
+/* Transformando alguns spans em blocos para comparação */
+.block-span {
+    display: block;
+    /* o span deixa de ser inline */
+    width: 200px;
+    height: 60px;
+    background: #b3e6b3;
+    border: 2px solid #3a8f3a;
+    text-align: center;
+    line-height: 60px;
+    margin-top: 0.4rem;
+}
+
+code {
+    background: #eef2f7;
+    padding: 0.08rem 0.3rem;
+    border-radius: 4px;
+}
+
+.site-footer {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #666;
+}

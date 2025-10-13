@@ -1,0 +1,74 @@
+<!-- ===================== index.html (atualizado) ===================== -->
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>DIV x SPAN — Exemplo Mínimo</title>
+  <link rel="stylesheet" href="comparativo.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>DIV x SPAN — Exemplo</h1>
+    <p class="lead">Três cartões demonstrando <code>&lt;div&gt;</code> (block) e <code>&lt;span&gt;</code> (inline).</p>
+  </header>
+
+  <main>
+    <section class="cards" aria-label="Exemplos de cartões">
+      <div class="card">
+        <h2 class="card-title">Card 1</h2>
+        <p>
+          <span class="icon" aria-hidden="true">🔧</span>
+          <span class="muted">Uso:</span>
+          <span>agrupamento estrutural com <code>&lt;div&gt;</code></span>
+        </p>
+      </div>
+
+      <div class="card">
+        <h2 class="card-title">Card 2</h2>
+        <p>
+          <span class="icon" aria-hidden="true">🎨</span>
+          <span class="muted">Exemplo:</span>
+          <span>estilizar parte do texto com <code>&lt;span&gt;</code></span>
+        </p>
+      </div>
+
+      <div class="card">
+        <h2 class="card-title">Card 3</h2>
+        <p>
+          <span class="icon" aria-hidden="true">⚡</span>
+          <span class="muted">Quando usar:</span>
+          <span>use <code>&lt;div&gt;</code> para blocos e <code>&lt;span&gt;</code> para trechos inline</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- Nova seção comparativa -->
+    <section class="comparison">
+      <h2>Comparação: DIV (Block) vs SPAN (Inline)</h2>
+      <p class="subtitle">À esquerda, as DIVs são blocos empilhados; à direita, os SPANs permanecem na mesma linha.</p>
+
+      <div class="columns">
+        <!-- Coluna esquerda com 3 DIVs block-level -->
+        <div class="left">
+          <div class="box-div">DIV 1</div>
+          <div class="box-div">DIV 2</div>
+          <div class="box-div">DIV 3</div>
+        </div>
+
+        <!-- Coluna direita com 4 SPANs inline-level -->
+        <div class="right">
+          <span class="box-span">SPAN 1</span>
+          <span class="box-span">SPAN 2</span>
+          <span class="box-span">SPAN 3</span>
+          <span class="box-span">SPAN 4</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Exemplo mínimo — sem frameworks.</p>
+  </footer>
+</body>
+</html>

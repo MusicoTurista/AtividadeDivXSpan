@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>DIV x SPAN — Exemplo Mínimo</title>
+    <!-- Link para o CSS externo (crie styles.css na mesma pasta) -->
+    <link rel="stylesheet" href="style-01.css">
+</head>
+
+<body>
+    <!-- Cabeçalho semântico da página -->
+    <header class="site-header">
+        <h1>DIV x SPAN — Exemplo</h1>
+        <p class="lead">Três cartões demonstrando <code>&lt;div&gt;</code> (block) e <code>&lt;span&gt;</code> (inline).
+        </p>
+    </header>
+
+
+    <!-- Conteúdo principal semântico -->
+    <main>
+        <!-- Seção que agrupa os cartões -->
+        <section class="cards" aria-label="Exemplos de cartões">
+
+
+            <!-- Cada cartão é um elemento block-level (div.card) -->
+            <div class="card">
+                <h2 class="card-title">Card 1</h2>
+                <!-- Ícone e pequeno texto são inline — usamos <span> -->
+                <p>
+                    <span class="icon" aria-hidden="true">🔧</span>
+                    <span class="muted">Uso:</span>
+                    <span>agrupamento estrutural com <code>&lt;div&gt;</code></span>
+                </p>
+            </div>
+
+
+            <div class="card">
+                <h2 class="card-title">Card 2</h2>
+                <p>
+                    <span class="icon" aria-hidden="true">🎨</span>
+                    <span class="muted">Exemplo:</span>
+                    <span>estilizar parte do texto com <code>&lt;span&gt;</code></span>
+                </p>
+            </div>
+
+
+            <div class="card">
+                <h2 class="card-title">Card 3</h2>
+                <p>
+                    <span class="icon" aria-hidden="true">⚡</span>
+                    <span class="muted">Quando usar:</span>
+                    <span>use <code>&lt;div&gt;</code> para blocos e <code>&lt;span&gt;</code> para trechos
+                        inline</span>
+                </p>
+            </div>
+
+
+        </section>
+    </main>
+
+
+    <!-- Rodapé semântico simples -->
+    <footer class="site-footer">
+        <p>Exemplo mínimo — sem frameworks.</p>
+    </footer>
+</body>
+
+</html>

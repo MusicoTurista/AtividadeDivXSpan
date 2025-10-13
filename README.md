@@ -2,4 +2,25 @@
 
 13/10/2025 18:45
 Passo 1 concluido (Rafael de Castro Costa) 
-Modelo utilizado Claude.ai Sonnet 4.5
+Modelo utilizado: Claude.ai Sonnet 4.5
+
+13/10/2025 19:13
+Passo 2
+Replicação concluida (Rafael de Castro Costa) 
+Modelo utilizado: GPT-5.
+
+13/10/2025 19:33
+Passo 2
+Experimentos concluidos (Rafael de Castro Costa) 
+Modelo utilizado: GPT-5.
+13/10/2025 19:38
+Passo 2
+Adicionado o arquivo comparativo-llms.md
+
+
+A fazer
+Passo 1-
+    Faltou adicionar o site gerado em 01-base (arquivos existem porém estão vazios)
+    Modelo da LLM está incorreto (Claude.ai é apenas o site de acesso, o modelo é Sonnet 4.5)
+Passo 2-
+    Adicionar comentarios ao arquivo comparativo-llms.md
