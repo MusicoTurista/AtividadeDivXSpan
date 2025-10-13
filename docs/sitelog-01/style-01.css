@@ -1,0 +1,127 @@
+/* Reset básico e configuração geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+/* Container principal - elemento DIV (block-level) */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho - elemento HEADER (block-level) */
+header {
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Grid de cartões - elemento DIV (block-level) */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* Cartão individual - elemento ARTICLE dentro de DIV (block-level) */
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Título do cartão - elemento H2 (block-level) */
+.card h2 {
+    color: #667eea;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+/* Parágrafo - elemento P (block-level) */
+.card p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* SPAN - elemento inline-level para estilizar texto específico */
+.highlight {
+    background-color: #ffeaa7;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+/* SPAN - elemento inline-level para ícones/símbolos */
+.icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: #667eea;
+    color: white;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 50%;
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+/* SPAN - elemento inline-level para badges */
+.badge {
+    background-color: #55efc4;
+    color: #00b894;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+/* Lista de exemplos - elemento UL (block-level) */
+.examples {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.examples li {
+    margin: 8px 0;
+    color: #333;
+}
+
+/* Código inline - elemento CODE dentro de SPAN (inline-level) */
+.code {
+    background-color: #2d3436;
+    color: #55efc4;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+}
