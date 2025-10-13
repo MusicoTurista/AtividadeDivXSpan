@@ -2,7 +2,7 @@
 
 13/10/2025 18:45
 Passo 1 concluido (Rafael de Castro Costa) 
-Modelo utilizado: Claude.ai Sonnet 4.5
+Modelo utilizado: Sonnet 4.5
 
 13/10/2025 19:13
 Passo 2
@@ -18,6 +18,10 @@ Passo 2
 Adicionado o arquivo comparativo-llms.md
 
 
+13/10/2025 19:41 (Rafael de Castro Costa) 
+Adicionado o site em 01-base
+Corrigido Modelo listado errado em prompt-log.md
+ 
 A fazer
 Passo 1-
     Faltou adicionar o site gerado em 01-base (arquivos existem porém estão vazios)
