@@ -32,7 +32,10 @@ Passo 3 Adicionado o codigo-com-bugs.html (Rafael de Castro Costa B)
 14/10/2025 18:35
 Passo 3 Adicionado o correcoes.html (Rafael de Castro Costa A)
 
-14/10/2025 18:35
+14/10/2025 18:38
+Passo 3 Correçoes validadas (Rafael de Castro Costa B)
+
+
 
 A fazer
 Passo 1-
