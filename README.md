@@ -13,14 +13,18 @@ Modelo utilizado: GPT-5.
 Passo 2
 Experimentos concluidos (Rafael de Castro Costa) 
 Modelo utilizado: GPT-5.
+
 13/10/2025 19:38
 Passo 2
-Adicionado o arquivo comparativo-llms.md
-
+Adicionado o arquivo comparativo-llms.md (Rafael de Castro Costa) 
 
 13/10/2025 19:41 (Rafael de Castro Costa) 
 Adicionado o site em 01-base
 Corrigido Modelo listado errado em prompt-log.md
+
+14/10/2025 13:06
+Passo 2
+Adicionado comparativo em comparativo-llms.md (Rafael de Castro Costa) 
  
 A fazer
 Passo 1-
