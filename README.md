@@ -25,7 +25,10 @@ Corrigido Modelo listado errado em prompt-log.md
 14/10/2025 13:06
 Passo 2
 Adicionado comparativo em comparativo-llms.md (Rafael de Castro Costa)
- 
+
+14/10/2025 18:20
+Passo 3 Adicionado o codigo-com-bugs.html (Rafael de Castro Costa)
+
 A fazer
 Passo 1-
     Faltou adicionar o site gerado em 01-base (arquivos existem porém estão vazios)
