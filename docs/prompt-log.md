@@ -107,3 +107,78 @@ LLM: Sonnet 4.5(13/10/2025-18:23) - LLM: Sonnet 4.5
 
     Adicionei uma nova seção de comparação: à esquerda, 3 DIVs empilhadas (block-level), e à direita, 4 SPANs em linha (inline-level), com título e legenda explicando a diferença.
     Isso mostra visualmente como blocos ocupam toda a largura e quebram linhas, enquanto spans fluem lado a lado.
+
+(14/10/2025 - 18:24) - LLM: Sonnet 4.5
+
+    Input:
+    Analise este código (colado codigo-com-bugs.html e codigo-com-bugs.css). Liste problemas relacionados a display/width/height/margens em elementos inline, explique por que estão errados e forneça a versão corrigida.
+
+    Output:
+
+    ./03-bugs-e-correcoes/correcoes.css
+
+    Análise de Problemas com Elementos Inline
+    🔴 Problemas Identificados
+    1. Classe .highlight (elemento <span>)
+    css.highlight {
+        background-color: #ffeaa7;
+        padding: 2px 6px;
+        border-radius: 3px;
+        font-weight: bold;
+        width: 200px; /* ❌ ERRO! */
+    }
+    Por que está errado:
+
+    <span> é um elemento inline que não respeita a propriedade width
+    Elementos inline ocupam apenas o espaço necessário para seu conteúdo
+    A propriedade width: 200px é completamente ignorada pelo navegador
+
+
+    2. Classe .badge (elemento <span>)
+    css.badge {
+        background-color: #55efc4;
+        color: #00b894;
+        padding: 4px 10px;
+        border-radius: 12px;
+        font-size: 0.85rem;
+        font-weight: bold;
+        margin-left: 8px;
+        margin-top: 20px; /* ❌ ERRO! */
+    }
+    Por que está errado:
+
+    Elementos inline não respeitam margin-top e margin-bottom
+    Apenas margin-left e margin-right funcionam em elementos inline
+    O margin-top: 20px não tem efeito visual algum
+
+
+    3. Classe .icon (elemento <span>)
+    css.icon {
+        display: inline-block; /* ✅ Correto! */
+        width: 24px;
+        height: 24px;
+        background-color: #667eea;
+        /* ... */
+    }
+    Observação:
+
+    Este caso está correto porque usa display: inline-block
+    inline-block permite usar width, height e todas as margens
+    É a solução ideal para quando precisamos de propriedades de bloco mantendo comportamento inline
+
+
+    4. Classe .inline-div (elemento <div>)
+    css.inline-div {
+        display: inline; /* ⚠️ Problemático */
+        background: #fab1a0;
+        padding: 5px;
+        border: 1px solid #d63031;
+    }
+    Por que é problemático:
+
+    Transforma uma <div> (naturalmente block) em inline
+    Se houver necessidade de aplicar width, height ou margens verticais no futuro, não funcionará
+    Melhor usar inline-block para manter flexibilidade
+
+    OBS: A LLM utilizada não gerou outro arquivo HTML, apenas alterações no CSS. Foi criado o arquivo ./03-bugs-e-correcoes/correcoes.html como uma copia da base ./03-bugs-e-correcoes/codigo-com-bugs.html e realizado a mudança no link da stylesheet, visando um melhor fluxo de visualização do exemplo.
+    Alem disso Para o codigo entregue a LLM foram removidos comentarios sobre os erros, buscando uma analise mais realista.

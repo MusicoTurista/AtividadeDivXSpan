@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIV x SPAN - Diferenças Práticas (com erros)</title>
+    <link rel="stylesheet" href="correcoes.css">
+</head>
+<body>
+    <!-- Container principal usando DIV (block-level) -->
+    <div class="container">
+        <!-- Cabeçalho semântico (block-level) -->
+        <header>
+            <h1>DIV <span class="highlight">vs</span> SPAN</h1>
+            <p>Entenda as diferenças entre elementos <span class="code">block-level</span> e <span class="code">inline-level</span></p>
+        </header>
+
+        <!-- Grid de cartões usando DIV (block-level) -->
+        <div class="cards-grid">
+            
+            <!-- Cartão 1 - DIV (block-level) -->
+            <article class="card">
+                <h2><span class="icon">📦</span>Elemento DIV</h2>
+                <p>
+                    O <span class="code">&lt;div&gt;</span> é um elemento 
+                    <span class="highlight">block-level</span> que ocupa toda a largura 
+                    disponível e sempre começa em uma nova linha.
+                </p>
+                <ul class="examples">
+                    <li><span class="icon">✓</span>Agrupa seções</li>
+                    <li><span class="icon">✓</span>Cria layouts</li>
+                    <li><span class="icon">✓</span>Estrutura páginas</li>
+                </ul>
+                <p style="margin-top: 15px;">
+                    <span class="badge">Block-level</span>
+                </p>
+            </article>
+
+            <!-- Cartão 2 - SPAN (inline-level) -->
+            <article class="card">
+                <h2><span class="icon">✨</span>Elemento SPAN</h2>
+                <p>
+                    O <span class="code">&lt;span&gt;</span> é um elemento 
+                    <span class="highlight">inline-level</span> que ocupa apenas o 
+                    espaço necessário e permanece na mesma linha do texto.
+                </p>
+                <ul class="examples">
+                    <li><span class="icon">✓</span>Estiliza palavras</li>
+                    <li><span class="icon">✓</span>Destaca trechos</li>
+                    <li><span class="icon">✓</span>Aplica estilos pontuais</li>
+                </ul>
+                <p style="margin-top: 15px;">
+                    <span class="badge">Inline-level</span>
+                </p>
+            </article>
+
+            <!-- Cartão 3 - Quando usar cada um -->
+            <article class="card">
+                <h2><span class="icon">💡</span>Quando Usar?</h2>
+                <p>
+                    Use <span class="highlight">DIV</span> para estruturar 
+                    <span class="code">containers</span>, 
+                    <span class="code">seções</span> e 
+                    <span class="code">layouts</span> completos.
+                </p>
+                <p>
+                    Use <span class="highlight">SPAN</span> para aplicar estilos em 
+                    <span class="code">palavras específicas</span>, 
+                    <span class="code">ícones inline</span> ou 
+                    <span class="code">badges</span> dentro de textos.
+                </p>
+
+                <div class="inline-div">Sou uma DIV que virou inline sem querer!</div>
+
+                <p style="margin-top: 15px;">
+                    <span class="badge">Dica!</span>
+                </p>
+            </article>
+
+        </div>
+    </div>
+</body>
+</html>
