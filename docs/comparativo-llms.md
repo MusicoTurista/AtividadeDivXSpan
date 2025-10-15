@@ -47,7 +47,7 @@ Modelos: LLM #1 (Sonnet 4.5), LLM #2 (GPT-5)
 | Acessibilidade mínima                          |    0    |    5    |
 
 **Média:**
-    Sonnet: 4.5
+    Sonnet: 3.8
     GPT-5: 4.6
 
 Através do comparativo, é possível perceber que ambos os modelos apresentam desempenho semelhante na área técnica, com ótima aplicação dos conceitos de HTML e CSS.  
