@@ -19,8 +19,8 @@
 
 ## Erros comuns e correções
 
-1. Uso de `width` e `margin-top` em elementos <span> (inline).  
-   Correção: trocar por <div> ou aplicar `display: inline-block` para permitir controle de tamanho e margens.
+1. Uso de width e margin-top em elementos <span> (inline).  
+   Correção: trocar por <div> ou aplicar display: inline-block para permitir controle de tamanho e margens.
 
 2. Esquecer o <!DOCTYPE html> no início do documento.  
    Correção: adicionar a declaração para garantir a compatibilidade com o HTML5.
@@ -30,3 +30,9 @@
 
 4. Falta de fechamento de tags <head> ou <body>.  
    Correção: revisar o código gerado e adicionar os encerramentos adequados.
+
+## Prints/links
+
+Repositório no GitHub: https://github.com/MusicoTurista/AtividadeDivXSpan
+LLM Sonnet 4.5 *https://claude.ai*
+LLM GPT-5 *https://chatgpt.com*

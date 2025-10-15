@@ -1,5 +1,23 @@
 # AtividadeDivXSpan
 
+# Como rodar
+Todos os códigos estão disponíveis em `./01-base`, `./02-experimentos` e `./03-bugs-e-correcoes`, além dos logs do primeiro site em `./docs/sitelog-01` e do segundo site em `./docs/sitelog-02`.
+
+Para visualizar os sites, basta abrir o arquivo `.html` diretamente no navegador ou utilizar a extensão Live Server no Visual Studio Code.  
+Para usar a extensão, é necessário abrir o arquivo na IDE, clicar com o botão direito e selecionar "Open with Live Server”.
+
+# LLMs usados
+ 1. Sonnet 4.5 *https://claude.ai*
+ 2. GPT-5 *https://chatgpt.com*
+
+# Nota
+
+Por questões de dificuldade de contato com os integrantes da turma devido a não estár periodizado e o inicio do recesso foi necessario a execução do trabalho de maneira solo. Vizando manter o intuito do trabalho e o trabalho de maneira assincrona, todo o processo foi versionado utilizando o gitHub, gerando logs de alterações e pedidos através do readme.md
+
+Por questões de dificuldade de contato com os integrantes da turma, devido a não estar periodizado e ao início do recesso. Foi necessária a execução do trabalho de forma individual.  
+Visando manter o propósito da atividade e o acompanhamento assíncrono do desenvolvimento, todo o processo foi versionado utilizando o GitHub, gerando logs de alterações e registros no arquivo `README.md`.
+
+# Logs de alterações
 13/10/2025 18:45
 Passo 1 concluido (Rafael de Castro Costa A)
 Modelo utilizado: Sonnet 4.5
@@ -35,11 +53,5 @@ Passo 3 Adicionado o correcoes.html (Rafael de Castro Costa A)
 14/10/2025 18:38
 Passo 3 Correçoes validadas (Rafael de Castro Costa B)
 
-
-
-A fazer
-Passo 1-
-    Faltou adicionar o site gerado em 01-base (arquivos existem porém estão vazios)
-    Modelo da LLM está incorreto (Claude.ai é apenas o site de acesso, o modelo é Sonnet 4.5)
-Passo 2-
-    Adicionar comentarios ao arquivo comparativo-llms.md
+15/10/2025 01:03
+Finalização de documentos (Rafael de Castro Costa A)
